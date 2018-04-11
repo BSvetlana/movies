@@ -8,7 +8,7 @@
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Sticky Footer Navbar Template for Bootstrap</title>
+    <title>@yield('title')</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sticky-footer-navbar/">
 
     <!-- Bootstrap core CSS -->
@@ -46,7 +46,7 @@
 <div class="container" style="padding-top: 60px">
 <!-- Begin page content -->
 @yield('content')
-
+@yield('form')
 </div>
 
 

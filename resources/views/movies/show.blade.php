@@ -1,5 +1,9 @@
 @extends('layouts.master')
 
+@section('title')
+
+    {{ $movie->title }}
+    @endsection
 
 @section('content')
 
