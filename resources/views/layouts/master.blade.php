@@ -43,10 +43,11 @@
     </div>
 </nav>
 
+<div class="container" style="padding-top: 60px">
 <!-- Begin page content -->
 @yield('content')
 
-
+</div>
 
 
 <!-- Bootstrap core JavaScript

@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-<div class="container">
+
     <div class="mt-3">
         <h1>Movies</h1>
     </div>
@@ -13,5 +13,5 @@
             </li>
         @endforeach
     </ul>
-</div>
+
 @endsection
