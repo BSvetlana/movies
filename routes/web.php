@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/movies','MoviesController@index')->name('all-movies');
+
+Route::get('/movies/{id}','MoviesController@show')->name('single-movies');
