@@ -15,9 +15,10 @@ class MoviesController extends Controller
 
     public function show($id){
 
-        $movie = Movie::find($id);
+        $movie = Movie::with('comments')->find($id);
 
-        return view('movies.show',compact('movie'));
+
+        return view('movies.show',compact(['movie']));
     }
 
     public function create(){
@@ -30,7 +31,7 @@ class MoviesController extends Controller
         $this->validate($request,[
             'title' => 'required',
             'genre' => 'required',
-            'year' => 'integer | between: 1900, $year',
+            'years' => 'date',
             'storyline' => 'required | max:1000'
         ]);
 
