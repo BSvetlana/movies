@@ -13,9 +13,5 @@ class Movie extends Model
         return $this->hasMany('App\Comment');
     }
 
-    public function getGenre(){
-
-        return self::find('genre')->get();
-    }
 
 }

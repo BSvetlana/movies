@@ -12,7 +12,7 @@
     <div class="mt-6">
         <h1>{{ $movie->title }}</h1>
     </div>
-    <a href="{{route('single-movies',['id'=>$movie->id])}}">{{ $movie->genre }} </a>
+    <a href="{{route('single-genre',['id'=>$movie->genre])}}">{{ $movie->genre }} </a>
     <p><b> {{ $movie->director }}</b> <i>Years: </i>{{$movie->years}}</p>
     <p>{{ $movie-> storyline }}</p>
     <hr>
