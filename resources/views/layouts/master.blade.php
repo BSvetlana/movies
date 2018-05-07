@@ -26,29 +26,34 @@
         <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="#"></a>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
+    <div class="collapse navbar-collapse" id="navbarCollapse"  style="padding-top: 10px">
         <ul class="navbar-nav mr-auto">
 
             <li class="nav-item active">
-                <a class="nav-link" href="#">Movies</a>
+                <a class="nav-link" href="/movies"><h4>Movies</h4></a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link" href="#">Add Movie</a>
+                <a class="nav-link" href="/movies/create"><h4>Add Movie</h4></a>
             </li>
         </ul>
-        <form class="form-inline mt-2 mt-md-0">
+        <form class="form-inline mt-2 mt-md-0" >
             <input class="form-control mr-sm-2" type="text" placeholder="Search">
             <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
     </div>
 </nav>
 
-<div class="container" style="padding-top: 60px">
+<div class="container" style="padding-top: 100px">
+    
+        
+
 <!-- Begin page content -->
 @yield('content')
 @yield('form')
-</div>
 
+            
+
+</div>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->

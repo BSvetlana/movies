@@ -10,9 +10,9 @@
 
 
     <div class="mt-6">
-        <h1>{{ $movie->title }}</h1>
+        <h1 class="text-center" style="color:#545151">{{ $movie->title }}</h1>
     </div>
-    <a href="{{route('single-genre',['id'=>$movie->genre])}}">{{ $movie->genre }} </a>
+    <a style="color:#00897B; text-decoration: none" href="{{route('single-genre',['id'=>$movie->genre])}}"><h3>{{ $movie->genre }}</h3> </a>
     <p><b> {{ $movie->director }}</b> <i>Years: </i>{{$movie->years}}</p>
     <p>{{ $movie-> storyline }}</p>
     <hr>

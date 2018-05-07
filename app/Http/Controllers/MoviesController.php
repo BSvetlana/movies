@@ -10,8 +10,11 @@ class MoviesController extends Controller
     public function index(){
 
         $movies = Movie::all();
-        return view('movies.index',compact(['movies']));
+        $latest_movies = Movie::orderBy('created_at','desc')->take(5)->get();
+
+        return view('movies.index',compact('movies','latest_movies'));
     }
+
 
     public function show($id){
 
@@ -21,10 +24,14 @@ class MoviesController extends Controller
         return view('movies.show',compact(['movie']));
     }
 
+
+
     public function create(){
 
         return view('movies.create');
     }
+
+
 
     public function store(Request $request){
 
